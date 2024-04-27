@@ -1,3 +1,4 @@
+import { name } from '../package.json'
 import { outputFile, readJson } from "fs-extra";
 import { resolve } from "path";
 /** 
@@ -6,6 +7,7 @@ import { resolve } from "path";
  * ‘b.c' => ['b', 'c']
  * ‘c' => ['c']
  */
+export const info = (...args: any[]) => console.log(`[${name}] `, ...args)
 export const PATH_SEPARATOR_RE = /([^.]+)\.?(.+)?/
 export function getFilenameFromPath(path: string) {
   return path.replace(/.+[\\\/](\w+\..+)/, '$1')

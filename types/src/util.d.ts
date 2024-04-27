@@ -4,6 +4,7 @@
  * ‘b.c' => ['b', 'c']
  * ‘c' => ['c']
  */
+export declare const info: (...args: any[]) => void;
 export declare const PATH_SEPARATOR_RE: RegExp;
 export declare function getFilenameFromPath(path: string): string;
 export declare const RE: {

@@ -1,0 +1,32 @@
+{
+    "name": "vue-i18n-scan",
+    "version": "0.0.2",
+    "type": "commonjs",
+    "description": "scan the i18n key in your vue project",
+    "main": "lib/src/index.js",
+    "scripts": {
+        "clean": "rimraf ./lib ./types",
+        "build": "npm run clean && tsc"
+    },
+    "keywords": [
+        "vue",
+        "vue-i18n"
+    ],
+    "author": "Xingyu Fu",
+    "license": "ISC",
+    "dependencies": {
+        "@vue/compiler-sfc": "^3.4.21",
+        "acorn": "^8.11.3",
+        "acorn-jsx": "^5.3.2",
+        "acorn-walk": "^8.3.2",
+        "chalk": "^4.0.0",
+        "fast-glob": "^3.3.2",
+        "fs-extra": "^11.2.0"
+    },
+    "devDependencies": {
+        "@types/fs-extra": "^11.0.4",
+        "@types/node": "^20.12.7",
+        "rimraf": "^5.0.5",
+        "typescript": "^5.4.5"
+    }
+}
